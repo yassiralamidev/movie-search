@@ -1,0 +1,29 @@
+/* .row{
+  padding:20px 0px 20px 0px
+} */
+.row p{
+  padding-top: 20px;
+  font-size: 35px;
+  font-weight: 600;
+}
+.row__movies{
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+.row__movies::-webkit-scrollbar{
+  display: none;
+}
+@media only screen and (max-width: 750px) {
+  .row p{
+    font-size: 26px;
+  }
+  .row__movies{
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,108 @@
+.moviesPage{
+  width: 100%;
+  height: 100%;
+  padding: 50px 70px;
+  color: white;
+}
+.moviesPage__header p{
+  font-weight: 600;
+  font-size: 30px;
+}
+.moviesPage .moviesPage__header{
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.moviesPage__header .inputField{
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--blue);
+}
+.moviesPage__header .inputField input{
+  width: 200px;
+  background-color: var(--blue);
+  color: #EEEEEE;
+  border: 0;
+  outline: none;
+  padding-left: 10px;
+}
+
+
+.moviesPage__list{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.moviesPage__list .movie{
+  margin: 20px;
+  width: 220px;
+  background-color: #000;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 15px;
+}
+.moviesPage__list .movie:hover{
+  cursor: pointer;
+  background-color:var(--blue);
+}
+.moviesPage__list .movie img{
+  height: 240px;
+  width: 180px;
+  border-radius: 10px;
+}
+.moviesPage__list .movie .title{
+  padding-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+.moviesPage__list .movie .releaseYear{
+  font-size: 11px;
+  padding-top: 5px;
+}
+/* 
+
+*/
+
+.moviesPage__buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.moviesPage__buttons button{
+  height: 35px;
+  border-radius: 5px;
+  width: 120px;
+  margin :0px 10px ;
+  border: 0;
+  outline: none;
+  color: white;
+  background-color: var(--blue);
+  cursor: pointer;
+}
+
+.moviesPage__buttons .disabled{
+  cursor: default;
+  background-color: var(--dark-gray);
+}
+
+
+@media only screen and (max-width: 750px) {
+  .moviesPage__header p{
+    font-size: 20px;
+  }
+  .moviesPage__header{
+    display: flex;
+    flex-direction: column;
+  }
+  .inputField{
+    margin-top: 15px;
+  }
+}

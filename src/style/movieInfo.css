@@ -1,0 +1,121 @@
+.movieInfo{
+  color: white;
+  padding: 20px 0px;
+}
+.movieInfo__banner{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.movieInfo__banner img{
+  width: 96%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.movieInfo__info{
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.movieInfo__left{
+  width: 30%;
+  display: flex;
+  justify-content: end;
+}
+.movieInfo__right{
+  width: 70%;
+  padding-left: 5px;
+}
+
+.movieInfo__right .title{
+  font-size: 23px;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+.movieInfo__right .genres{
+  padding: 5px 0px;
+  color: var(--dark-gray);
+}
+.movieInfo__right .overview{
+  padding: 5px 0px;
+  width: 500px;
+}
+.movieInfo__right .tagline,.vote,.duration,.date{
+  color: var(--dark-gray);
+}
+
+.movieInfo__left img{
+  height: 400px;
+  width: 100%;
+  object-fit: contain;
+}
+.movieInfo__info .buttons{
+  padding: 5px 0px;
+  display: flex;
+}
+.movieInfo__info .buttons button{
+  width: 160px;
+  height: 40px;
+  color: white;
+  cursor: pointer;
+  background-color: var(--blue);
+  border-radius: 6px;
+  border: 0;
+  outline: 0;
+}
+.movieInfo__info .buttons .imdb button{
+  margin-right: 15px;
+  background-color: #F5C518;
+  color: var(--black);
+  text-decoration: none;
+}
+.movieInfo__video{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.movieInfo__video .video{
+  margin-top: 20px;
+}
+.cast__title{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cast__list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 750px) {
+  .movieInfo__info{
+    display: flex;
+    flex-direction: column;
+  }
+  .movieInfo__left,.movieInfo__right{
+    width: 100%;
+  }
+  .movieInfo__right .overview{
+    width: 100%;
+  }
+  .movieInfo__video{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

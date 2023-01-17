@@ -1,0 +1,117 @@
+.tvInfo{
+  color: white;
+  padding: 20px 0px;
+}
+.tvInfo__banner{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tvInfo__banner img{
+  width: 96%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.tvInfo__info{
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tvInfo__left{
+  width: 30%;
+  display: flex;
+  justify-content: end;
+}
+.tvInfo__right{
+  width: 70%;
+  padding-left: 5px;
+}
+
+.tvInfo__right .title{
+  font-size: 23px;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+.tvInfo__right .overview{
+  padding: 5px 0px;
+  width: 500px;
+}
+.tvInfo__right .tagline,.vote,.nb_seasons,.date{
+  color: var(--dark-gray);
+}
+
+.tvInfo__left img{
+  height: 400px;
+  width: 100%;
+  object-fit: contain;
+}
+.tvInfo__info .buttons{
+  padding: 5px 0px;
+  display: flex;
+}
+.tvInfo__info .buttons button{
+  width: 160px;
+  height: 40px;
+  color: white;
+  cursor: pointer;
+  background-color: var(--blue);
+  border-radius: 6px;
+  border: 0;
+  outline: 0;
+}
+.tvInfo__info .buttons .imdb button{
+  margin-right: 15px;
+  background-color: #F5C518;
+  color: var(--black);
+  text-decoration: none;
+}
+.tvInfo__video{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.tvInfo__video .video{
+  margin-top: 20px;
+}
+.cast__title{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cast__list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 750px) {
+  .tvInfo__info{
+    display: flex;
+    flex-direction: column;
+  }
+  .tvInfo__left,.tvInfo__right{
+    width: 100%;
+  }
+  .tvInfo__right .overview{
+    width: 100%;
+  }
+  .tvInfo__video{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

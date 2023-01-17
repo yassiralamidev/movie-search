@@ -1,0 +1,7 @@
+export {default as Login} from './Login'
+export {default as Signup} from './Signup'
+export {default as Home} from './Home'
+export {default as Movies} from './Movies'
+export {default as Tv} from './Tv'
+export {default as MovieInfo} from './MovieInfo'
+export {default as TvInfo} from './TvInfo'

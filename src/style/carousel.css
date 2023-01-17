@@ -1,0 +1,27 @@
+.carousel{
+
+}
+.carousel__item{
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.carousel__item .sep{
+  padding: 0px 7px 0px 7px;
+}
+.carousel__item p{
+  width: 300px;
+  font-size: 14px;
+}
+
+
+

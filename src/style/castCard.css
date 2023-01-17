@@ -1,0 +1,28 @@
+.cast{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dark-gray);
+  padding: 13px;
+  border-radius: 8px;
+  margin: 10px;
+  width: 200px;
+  height: 220px;
+}
+.cast img{
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.cast p{
+  font-size: 14px;
+  padding:2px 0px;
+  text-align: center;
+}
+.cast span{
+  font-size: 10px;
+  color: var(--black);
+  text-align: center;
+}
